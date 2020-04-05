@@ -100,8 +100,8 @@ export default {
 
     async signUp() {
       await this.$store.dispatch('handleSignUp', {
-        email: 'droyer@wiley.com',
-        password: 'Dance4life'
+        email: 'andre@idooh.com.br',
+        password: '1234567890$'
       })
     }
   }
