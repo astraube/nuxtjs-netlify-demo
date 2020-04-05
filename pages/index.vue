@@ -21,8 +21,7 @@
 </template>
 
 <script>
-const email = 'droyer01@gmail.com'
-const password = 'Dance4life'
+
 export default {
   computed: {
     user() {
@@ -88,6 +87,9 @@ export default {
     },
 
     async login() {
+      const email = this.$store.state.mockUserEmail;
+      const password = this.$store.state.mockUserPass;
+
       await this.$store.dispatch('handleLogin', { email, password })
     },
 
@@ -99,9 +101,12 @@ export default {
     },
 
     async signUp() {
+      const email = this.$store.state.mockUserEmail;
+      const password = this.$store.state.mockUserPass;
+      
       await this.$store.dispatch('handleSignUp', {
-        email: 'a.straube.m@gmail.com',
-        password: '1234567890$'
+        email: email,
+        password: password
       })
     }
   }

@@ -36,10 +36,15 @@ export default {
 
   methods: {
     async login() {
+      const email = this.$store.state.mockUserEmail;
+      const password = this.$store.state.mockUserPass;
+
+      await this.$store.dispatch('handleLogin', { email, password })
+      /*
       await this.$store.distpach('handleLogin', {
         email: this.loginEmail,
         password: this.loginPassword
-      })
+      })*/
     }
   }
 }

@@ -1,4 +1,6 @@
 export const state = () => ({
+  mockUserEmail: 'a.straube.m@gmail.com',
+  mockUserPass: '1234567890$',
   currentUser: null
 })
 
