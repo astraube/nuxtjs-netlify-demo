@@ -10,10 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "update": "git add -A && git commit -m 'update' && git push origin master",
-    "net:dev": "netlify dev",
-    "net:build": "netlify build",
-    "net:deploy": "netlify deploy",
+    "update": "git add -A && git commit -m 'update' && git push origin master"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
@@ -32,8 +29,5 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.0.1",
     "prettier": "^1.16.4"
-  },
-  "git": {
-    "pre-commit": "lint"
   }
 }
