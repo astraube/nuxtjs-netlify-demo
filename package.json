@@ -10,7 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "update": "git add -A && git commit -m 'update' && git push"
+    "update": "git add -A && git commit -m 'update' && git push origin master"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
