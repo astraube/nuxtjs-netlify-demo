@@ -100,7 +100,7 @@ export default {
 
     async signUp() {
       await this.$store.dispatch('handleSignUp', {
-        email: 'andre@idooh.com.br',
+        email: 'a.straube.m@gmail.com',
         password: '1234567890$'
       })
     }
